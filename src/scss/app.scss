@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// variables
+$btn-height: 44px;
+
+// Header
+.header{
+    // submenu
+    .nav__item{
+        &:hover{
+            .nav__item-submenu{
+                display: block;
+            }
+        }
+
+        .nav__item-submenu{
+            display: none;
+        }
+    }
+}
+
+// Helpers
+.page-width{
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+// buttons
+.shopify-payment-button{
+    button{
+        @apply bg-black text-white rounded-sm;
+        min-height: $btn-height !important;
+    }
+    .shopify-payment-button__more-options{
+        @apply mt-2
+    }
+}
+
+.button__primary{
+    @apply bg-black text-white my-2 px-6 rounded-sm flex items-center;
+    min-height: $btn-height;
+}
+
+// product form
+.product-form__input{
+    // select label after checked radio input 
+    input[type='radio']:checked + label{
+        @apply bg-black text-white;
+    }
+}
+
+// Collection filter
+.filter-form{
+    .filter-group{
+        &[open]{
+            .arrow-icon{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
