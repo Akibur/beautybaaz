@@ -1,5 +1,12 @@
 {
   "current": {
+<<<<<<< HEAD
+=======
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+>>>>>>> 8a665f4f7e9bb242ada02b3e63a2927eb5301984
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
